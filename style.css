@@ -159,12 +159,21 @@ footer{
 .col1 > .container{
     width: 400px;
 }
-
+.content-section{
+    flex-direction: row; 
+    display: flex; 
+    flex-wrap: wrap; 
+    width: 80%; 
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
 .article-card{
-    width: 380px;
+    width: 26%;
+    min-width: 300px;
     height: auto;
+    margin: 50px;
     background-color: white;
-    margin: 10px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     border-radius: 10px;
@@ -182,7 +191,7 @@ footer{
 }
 .card-read{
     width: 160px;
-    margin-left: 25%;
+    margin: auto;
     color: rgb(158, 158, 158);
     padding:15px;
     border-bottom:2px solid rgb(24, 106, 212);
@@ -201,7 +210,7 @@ footer{
     content:"";
     position: absolute;
     margin-top: -60px;
-    margin-left: -160px;
+    margin-left: 0px;
     z-index: -10;
     width: 80%;
     height: 100%;
@@ -270,5 +279,10 @@ footer{
         height: 100px;
         margin-left: 16%;
         align-items: center;
+    }
+  }
+  @media only screen and (max-width: 1720px){
+    .article-card{
+        margin: 47px;
     }
   }
